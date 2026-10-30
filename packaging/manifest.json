@@ -1,0 +1,30 @@
+{
+  "name": "keyboard",
+  "id": "org.pjos.keyboard",
+  "title": "PJOS Keyboard",
+  "version": "0.1.0",
+  "kind": "keyboard-provider",
+  "provider": "PocketKeyboardProvider",
+  "entry": "index.html",
+  "assets": "assets",
+  "layouts": ["text", "number", "url"],
+  "reservedLayouts": ["search", "password", "emoji", "voice", "ai"],
+  "capabilities": ["Touch", "DPad", "Gamepad", "HardwareKeyboard"],
+  "themes": ["light", "dark", "oled"],
+  "inputApi": {
+    "transport": "http",
+    "defaultBaseUrl": "http://127.0.0.1:8787",
+    "endpoints": {
+      "show": "/api/keyboard/show",
+      "hide": "/api/keyboard/hide",
+      "submit": "/api/keyboard/submit",
+      "focus": "/api/keyboard/focus",
+      "blur": "/api/keyboard/blur",
+      "key": "/api/keyboard/key",
+      "state": "/api/keyboard/state",
+      "providers": "/api/keyboard/providers",
+      "provider": "/api/keyboard/provider"
+    }
+  },
+  "abi": 1
+}
