@@ -20,6 +20,7 @@ export type {
   KeyboardState,
   Layout,
   ProviderInfo,
+  RenderSpec,
   ReservedLayout,
   ShowOptions,
   Theme,

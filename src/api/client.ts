@@ -1,4 +1,4 @@
-import type { KeyboardState, ProviderInfo, ShowOptions } from "./types";
+import type { KeyboardState, ProviderInfo, RenderSpec, ShowOptions } from "./types";
 
 /**
  * HTTP client for keyboardd's Input API. The keyboard provider and any app-side
@@ -75,6 +75,11 @@ export class InputApiClient {
 
   state(): Promise<KeyboardState> {
     return this.request("/api/keyboard/state");
+  }
+
+  /** The active provider's drawing spec (side-effect free). */
+  render(): Promise<{ provider: string; render: RenderSpec }> {
+    return this.request("/api/keyboard/render");
   }
 
   providers(): Promise<{ active: string; providers: ProviderInfo[] }> {

@@ -38,6 +38,19 @@ export interface ShowOptions {
   options?: Record<string, unknown>;
 }
 
+/** What the active provider reports it would draw (mirrors keyboardd RenderSpec). */
+export interface RenderSpec {
+  layout: Layout;
+  inputMode: InputMode;
+  value: string;
+  placeholder: string;
+  secure: boolean;
+  capabilities: Capability[];
+  theme: Theme;
+  visible: boolean;
+  focusedInput: string;
+}
+
 export interface ProviderInfo {
   name: string;
   capabilities: Capability[];

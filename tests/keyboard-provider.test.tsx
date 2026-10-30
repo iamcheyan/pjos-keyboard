@@ -180,6 +180,16 @@ describe("InputApiClient", () => {
     await expect(client.show({ layout: "text" })).rejects.toMatchObject({ code: "invalid_layout", status: 400 });
   });
 
+  it("reads the active provider's render spec", async () => {
+    interface Body { provider: string; render: { layout: string; inputMode: string } }
+    const body: Body = { provider: "stub", render: { layout: "url", inputMode: "dpad" } };
+    const client = new InputApiClient("http://x", mockFetch(() => json(body)));
+    const rendered = await client.render();
+    expect(rendered.provider).toBe("stub");
+    expect(rendered.render.layout).toBe("url");
+    expect(rendered.render.inputMode).toBe("dpad");
+  });
+
   it("sends key tokens", async () => {
     let body = "";
     const client = new InputApiClient("http://x", mockFetch((_u, init) => {
