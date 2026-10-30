@@ -1,0 +1,40 @@
+{
+  "name": "pjos-keyboard",
+  "version": "0.1.0",
+  "private": false,
+  "description": "PJOS Universal Input Framework default keyboard provider (Text/Number/URL, Touch/DPad, capability-driven)",
+  "type": "module",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "dist-lib", "README.md", "docs"],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:lib": "esbuild src/index.ts --bundle --format=esm --platform=neutral --external:react --external:react-dom --outfile=dist-lib/index.mjs",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "pack:keyboard": "node packaging/pack-keyboard.mjs",
+    "verify": "npm run typecheck && npm run test && npm run build && npm run build:lib"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "esbuild": "^0.21.5",
+    "jsdom": "^25.0.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}

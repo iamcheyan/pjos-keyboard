@@ -1,0 +1,8 @@
+node_modules/
+dist/
+dist-lib/
+keyboard.pkg
+keyboard.pkg.sha256
+packaging/.stage/
+*.local
+.DS_Store
