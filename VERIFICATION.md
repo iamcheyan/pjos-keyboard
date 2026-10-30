@@ -1,8 +1,8 @@
 # Verification — pjos-keyboard @ 2026-10-31
 
 - Verdict: PASS
-- Commit: `__COMMIT__` (screenshot harness + favicon; this document is the following commit)
-- Remote: `__REMOTE__`
+- Commit: `d2aa780654816afe586585cdd9264ceeef3e3973` (screenshot harness + favicon; this document is the following commit)
+- Remote: `d2aa780654816afe586585cdd9264ceeef3e3973`
 - Runtime: `vite preview` of the production bundle on `http://127.0.0.1:5199` (showcase; no keyboardd needed for the provider UI)
 - Toolchain: node v22.23.3, Chrome 155.0.8059.84, TypeScript 5.6.3, Vite 5.4.21
 
