@@ -1,0 +1,127 @@
+{
+  "captured_at": "2026-10-30T17:20:37.073Z",
+  "ui": "http://127.0.0.1:5199",
+  "chrome": "/usr/bin/google-chrome",
+  "screenshots": [
+    {
+      "name": "text-light-touch-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "profile": "Desktop",
+      "layout": "text",
+      "theme": "light",
+      "capabilities": "Touch",
+      "dpad": 0,
+      "mode": "touch",
+      "sha256": "ba093097b95b8b1fb317aa460e9c15d038afb95c9cbdef14b9da45141e53a92b"
+    },
+    {
+      "name": "text-dark-touch-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "profile": "Desktop",
+      "layout": "text",
+      "theme": "dark",
+      "capabilities": "Touch",
+      "dpad": 0,
+      "mode": "touch",
+      "sha256": "2c6ec1485f4b38b8b12a038816a6c413335671f987a9fd0c6f79e0ae8919ca2d"
+    },
+    {
+      "name": "text-oled-touch-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "profile": "Desktop",
+      "layout": "text",
+      "theme": "oled",
+      "capabilities": "Touch",
+      "dpad": 0,
+      "mode": "touch",
+      "sha256": "2a7926081153a34f6b4c0f774bd99b0e76dcf56cbb1ef0c7053cc4c32c8a0f28"
+    },
+    {
+      "name": "text-dark-dpad-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "profile": "RG34XX",
+      "layout": "text",
+      "theme": "dark",
+      "capabilities": "DPad,Gamepad",
+      "dpad": 3,
+      "mode": "dpad",
+      "sha256": "521e7f981d5a71c8e5503cb729a4315a65f9aa64a11cbeaf46bf92506ea85113"
+    },
+    {
+      "name": "number-dark-touch-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "profile": "Desktop",
+      "layout": "number",
+      "theme": "dark",
+      "capabilities": "Touch",
+      "dpad": 0,
+      "mode": "touch",
+      "sha256": "51b7a933da9776ebf20d9beb95296a13db5d4fda0a30744c19137bbc8260ca65"
+    },
+    {
+      "name": "url-light-touch-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "profile": "Desktop",
+      "layout": "url",
+      "theme": "light",
+      "capabilities": "Touch",
+      "dpad": 0,
+      "mode": "touch",
+      "sha256": "f6485e2d69f4393a42a90730cc4e491177d5eeccece41b34dee80d16edd32b20"
+    },
+    {
+      "name": "text-light-touch-320x240.png",
+      "width": 320,
+      "height": 240,
+      "profile": "Android Tablet",
+      "layout": "text",
+      "theme": "light",
+      "capabilities": "Touch",
+      "dpad": 0,
+      "mode": "touch",
+      "sha256": "d5b85e2ee6b3dc06d156a7e427bc28a4d366cbd697674c171a4a42d818a17bf9"
+    },
+    {
+      "name": "text-dark-dpad-480x320.png",
+      "width": 480,
+      "height": 320,
+      "profile": "RG34XX",
+      "layout": "text",
+      "theme": "dark",
+      "capabilities": "DPad,Gamepad",
+      "dpad": 2,
+      "mode": "dpad",
+      "sha256": "8f24e05157e725b8985239d15c75f17282834695a280e8f7b25bf1be2527d842"
+    },
+    {
+      "name": "text-light-touch-640x480.png",
+      "width": 640,
+      "height": 480,
+      "profile": "Leaf3C",
+      "layout": "text",
+      "theme": "light",
+      "capabilities": "Touch,DPad",
+      "dpad": 0,
+      "mode": "touch",
+      "sha256": "e16536d795b3fc3248c6cbac048d6349ee7c1237e139e37ac606b6fecb9ff305"
+    },
+    {
+      "name": "text-dark-touch-720x720.png",
+      "width": 720,
+      "height": 720,
+      "profile": "Desktop",
+      "layout": "text",
+      "theme": "dark",
+      "capabilities": "Touch",
+      "dpad": 0,
+      "mode": "touch",
+      "sha256": "69255c665f08d83edfb77f86b5a2541f0d36dc143f78f4684ef0b4d6c8c8f026"
+    }
+  ]
+}

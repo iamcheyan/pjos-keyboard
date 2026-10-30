@@ -85,11 +85,18 @@ import { KeyboardProvider } from "pjos-keyboard";
 ## Test
 
 ```sh
-npm test          # 43 unit tests: layouts, navigation, capability, themes, component, API client
+npm test          # 44 unit tests: layouts, navigation, capability, themes, component, API client
 npm run typecheck
 npm run build
 npm run pack:keyboard   # -> keyboard.pkg
 ```
+
+## Screenshots
+
+`npm run screenshots` captures 10 showcase states (text/number/url layouts, light/dark/oled themes,
+Touch and DPad modes, 320×240 → 1280×720) into `docs/screenshots/` and writes a manifest with
+the run timestamp and SHA-256 of each PNG. The script fails on duplicate hashes, wrong PNG
+sizes, horizontal overflow, a missing keyboard surface, or any console/HTTP error.
 
 ## Packaging
 
